@@ -1,0 +1,22 @@
+<div class="pokemon_info_div">
+  <div
+    class="pokemon_info"
+    *ngFor="let info of [1, 2, 3, 4, 5]; let index = index"
+    [ngStyle]="index % 2 != 0 ? { 'margin-top': '50px' } : {}"
+  >
+    <section class="pokemon_number">#001</section>
+    <section class="pokemon_image">
+      <img
+        src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"
+        alt=""
+      />
+    </section>
+    <section class="pokemon_description_section">
+      <section class="pokemon_title">Balbasaur</section>
+      <section class="pokemon_descriptrion">
+        There is plant seed on its back rigth from the day this Pokomon is born.
+        The seed slowly grows larger
+      </section>
+    </section>
+  </div>
+</div>

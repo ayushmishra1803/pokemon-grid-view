@@ -1,0 +1,270 @@
+.outer_div {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-x: hidden;
+  background: white;
+  .pokemon_main_div {
+    background-color: white;
+    .pokemon_heading {
+      background: #fff;
+      position: absolute;
+      top: -70px;
+      left: -40px;
+      width: 100%;
+      overflow: hidden;
+      height: 215px;
+      transform: rotate(-8deg);
+      transform-origin: center top;
+      span {
+        color: #f5a623;
+        font-size: 120px;
+        font-weight: 900;
+        letter-spacing: 10px;
+        margin-top: 95px;
+        display: flex;
+        justify-content: flex-start;
+        height: 100%;
+        width: 100%;
+        margin-left: 30px;
+        font-family: "Luckiest Guy", cursive;
+      }
+      transform-origin: center top;
+    }
+  }
+
+  .pokemon-grid {
+    width: 100%;
+    margin-top: 2%;
+    padding-bottom: 10%;
+    background: #f5a623;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .prokemon-card_div {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 20%;
+      .pokemon-card {
+        width: 40%;
+        display: flex;
+        background-color: white;
+        flex-direction: column;
+        height: 120px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 200px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 200px;
+        position: relative;
+        .starter_div {
+          width: 100%;
+          padding: 0 !important;
+          display: flex;
+          justify-content: center;
+          top: -45%;
+          right: -30%;
+          position: absolute;
+          .stater_section {
+            width: 40%;
+            display: flex;
+            justify-content: flex-end;
+            span {
+              color: white;
+              font-weight: 900;
+              font-size: 50px;
+              letter-spacing: 5px;
+              font-family: "Luckiest Guy", cursive;
+            }
+          }
+        }
+        span {
+          margin: 0 2%;
+          margin-top: 2%;
+          font-size: 20px;
+          font-weight: 600;
+        }
+        p {
+          margin: 0 8%;
+          font-size: 18px;
+        }
+      }
+      .pokemon-info-grid {
+        width: 100%;
+        margin: 5% 10%;
+      }
+    }
+  }
+  .yeah_main_div {
+    background-color: #f5a623;
+    .yeah_heading {
+      background: transparent;
+      position: relative;
+      top: -100px;
+      left: -10px;
+      width: 100%;
+      overflow: hidden;
+      height: 215px;
+      transform: rotate(8deg);
+      transform-origin: center top;
+      transform-origin: center top;
+      margin-right: 30px;
+      padding-right: 20px;
+      span {
+        color: white;
+        font-size: 120px;
+        font-weight: 900;
+        letter-spacing: 10px;
+        margin-top: 75px;
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
+        width: 100%;
+        font-family: "Luckiest Guy", cursive;
+      }
+      transform-origin: center top;
+    }
+  }
+  .yeah_main_div2 {
+    background-color: white;
+    .yeah_heading2 {
+      background: white;
+      position: relative;
+      top: -120px;
+      left: -10px;
+      width: 100%;
+      overflow: hidden;
+      height: 225px;
+      transform: rotate(8deg);
+      margin-right: 30px;
+      padding-right: 20px;
+
+      transform-origin: center top;
+    }
+  }
+}
+@media only screen and (max-width: 800px) {
+  .pokemon_main_div {
+    .pokemon_heading {
+      top: -40px !important;
+      left: -20px !important;
+      width: 100% !important;
+      height: 150px !important;
+      span {
+        font-size: 40px !important;
+        margin-top: 110px !important;
+      }
+    }
+  }
+  .pokemon-grid {
+    margin-top: 10% !important;
+    .prokemon-card_div {
+      width: 100% !important;
+      margin-top: 50% !important;
+      .pokemon-card {
+        width: 90% !important;
+        height: 120px !important;
+        .starter_div {
+          top: -20% !important;
+          .stater_section {
+            span {
+              font-size: 20px !important;
+            }
+          }
+        }
+        span {
+          font-size: 20px !important;
+        }
+        p {
+          font-size: 16px !important;
+        }
+      }
+      .pokemon-info-grid {
+        width: 100%;
+        margin: 5% 10%;
+      }
+    }
+  }
+  .yeah_main_div {
+    .yeah_heading {
+      top: -20px !important;
+      height: 200px !important;
+      span {
+        font-size: 40px !important;
+        margin-top: 75px !important;
+      }
+    }
+  }
+  .yeah_main_div2 {
+    .yeah_heading2 {
+      top: -105px !important;
+      height: 150px !important;
+      width: 100% !important;
+      left: -20px !important;
+
+      padding-right: 50px !important;
+    }
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .pokemon_main_div {
+    .pokemon_heading {
+      top: -100px !important;
+      left: -80px !important;
+      width: 100% !important;
+      height: 500px !important;
+      padding-right: 50px !important;
+      span {
+        font-size: 250px !important;
+        margin-top: 250px !important;
+      }
+    }
+  }
+  .pokemon-grid {
+    margin-top: 4% !important;
+    .prokemon-card_div {
+      margin-top: 30% !important;
+      .pokemon-card {
+        height: 250px !important;
+        .starter_div {
+          .stater_section {
+            span {
+              font-size: 100px !important;
+            }
+          }
+        }
+        span {
+          font-size: 40px !important;
+        }
+        p {
+          font-size: 36px !important;
+        }
+      }
+      .pokemon-info-grid {
+        width: 100%;
+        margin: 5% 10%;
+      }
+    }
+  }
+  .yeah_main_div {
+    .yeah_heading {
+      top: -200px !important;
+      height: 350px !important;
+      span {
+        font-size: 200px !important;
+        margin-top: 75px !important;
+      }
+    }
+  }
+  .yeah_main_div2 {
+    .yeah_heading2 {
+      top: -280px !important;
+      height: 550px !important;
+      width: 100% !important;
+      left: -20px !important;
+      padding-right: 50px !important;
+    }
+  }
+}
